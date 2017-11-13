@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/coord"
+    android:background="@drawable/rsz_top_chalkboard_wallpaper_1920x1292"
+    android:layout_height="match_parent"
+    tools:context="com.example.div_2.mathgame.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFF"
+            android:text="Timer"
+            android:id="@+id/timer"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFF"
+
+            android:layout_below="@+id/timer"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:elevation="30dp"
+
+            android:text="Num1"
+             />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView"
+            android:text="Operator"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFF"
+            android:elevation="30sp"
+            android:textSize="30sp"
+
+
+            android:textStyle="bold"
+           />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textView3"
+            android:textSize="30sp"
+            android:elevation="30sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+
+            android:text="Num2" />
+
+        <EditText
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#FFFF"
+
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="41dp"
+            android:hint="Enter Answer"
+
+            android:textColor="#FFF"
+            android:inputType="number"
+            android:backgroundTint="#FFFF"
+
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:layout_below="@+id/textView4"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="116dp"
+
+            android:text="@string/subtext"
+            android:textColor="#FFFF"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="397dp" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
